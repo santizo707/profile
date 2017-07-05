@@ -1,0 +1,32 @@
+#newProfile form > .form-group:first-child input {
+	display: inline;
+	width: 49.5%;
+}
+
+#updatedProfile {
+	display: none;
+}
+
+#results {
+	color: #fff;
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.success {
+	background-color: #5cb85c;
+	transition: 0.3s all ease-in-out;
+}
+
+.failure {
+	background-color: #d9534f;
+	transition: 0.3s all ease-in-out;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+  color: black;
+
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character Set -->
+  <meta charset="utf-8">
+  <!-- Media Queries -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+	<title>Create User Profile App</title>
+
+  <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    	<div id="newProfile" class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+    		<h1>New Profile</h1>
+    		<!-- new profile -->
+  			<form>
+  				<!-- NAME -->
+  				<div class="form-group">
+  					<input type="text" id="userfname" class="form-control" placeholder="First Name">
+  					<input type="text" id="userlname" class="form-control" placeholder="Last Name">
+  				</div>
+  				<!-- GENDER -->
+  				<div class="form-group">
+  					Gender:
+  					<label class="radio-inline">
+  					  <input type="radio" name="radio1" class="userGender" value="male"> Male
+  					</label>
+  					<label class="radio-inline">
+  					  <input type="radio" name="radio1" class="userGender" value="female"> Female
+  					</label>
+  				</div>
+
+  				<!-- EMAIL -->
+  				<div class="form-group">
+  					<input type="email" id="userEmail" class="form-control" placeholder="Email Address">
+  				</div>
+
+  				<!-- PHONE NUMBER -->
+  				<div class="form-group">
+  					<input type="number" id="userPhone" class="form-control" placeholder="Phone Number">
+  				</div>
+
+
+  				<button id="sendDataButton" type="button" class="btn btn-default">Continue</button>
+
+  				<div id="results"></div>
+  			</form>
+
+    	</div><!-- /.col-sm-6 -->
+
+    	<div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
+    		<h1>User Profile</h1>
+    		<!-- updated profile -->
+    		<div>
+    			<h2 id='newUserName'></h2>
+    			<h3 id="newUserGender"></h3>
+    			<h3 id="newUserEmail"></h3>
+    			<h3 id="newUserPhone"></h3>
+    			
+    		</div><!-- /#updatedProfile -->
+
+    	</div><!-- /.col-sm-6 -->
+
+    </div><!-- /.container -->
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
